@@ -15,3 +15,14 @@ void Compare(string[] NewArray, string[] CompareArray)
             Console.WriteLine($"{i + 1}й не соответсвует ТЗ");
     }
 }
+
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+Compare(NewArray, CompareArray);
+PrintArray(CompareArray);
